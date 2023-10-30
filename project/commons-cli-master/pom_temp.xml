@@ -1,0 +1,1700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one or more
+   contributor license agreements.  See the NOTICE file distributed with
+   this work for additional information regarding copyright ownership.
+   The ASF licenses this file to You under the Apache License, Version 2.0
+   (the "License"); you may not use this file except in compliance with
+   the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <parent>
+        <groupId>org.apache.commons</groupId>
+        <artifactId>commons-parent</artifactId>
+        <version>62</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>commons-cli</groupId>
+    <artifactId>commons-cli</artifactId>
+    <version>1.6.0-SNAPSHOT</version>
+    <name>Apache Commons CLI</name>
+
+    <inceptionYear>2002</inceptionYear>
+    <description>
+        Apache Commons CLI provides a simple API for presenting, processing and validating a Command Line Interface.
+    </description>
+
+    <url>https://commons.apache.org/proper/commons-cli/</url>
+
+    <issueManagement>
+        <system>jira</system>
+        <url>https://issues.apache.org/jira/browse/CLI</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:https://gitbox.apache.org/repos/asf/commons-cli.git</connection>
+        <developerConnection>scm:git:https://gitbox.apache.org/repos/asf/commons-cli.git</developerConnection>
+        <url>https://gitbox.apache.org/repos/asf?p=commons-cli.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <developers>
+        <developer>
+            <name>James Strachan</name>
+            <id>jstrachan</id>
+            <email>jstrachan@apache.org</email>
+            <organization>SpiritSoft, Inc.</organization>
+        </developer>
+        <developer>
+            <name>Bob McWhirter</name>
+            <id>bob</id>
+            <email>bob@werken.com</email>
+            <organization>Werken</organization>
+            <roles>
+                <role>contributed ideas and code from werken.opt</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>John Keyes</name>
+            <id>jkeyes</id>
+            <email>jbjk@mac.com</email>
+            <organization>integral Source</organization>
+            <roles>
+                <role>contributed ideas and code from Optz</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Rob Oxspring</name>
+            <id>roxspring</id>
+            <email>roxspring@imapmail.org</email>
+            <organization>Indigo Stone</organization>
+            <roles>
+                <role>designed CLI2</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Emmanuel Bourg</name>
+            <id>ebourg</id>
+            <email>ebourg@apache.org</email>
+            <organization>Ariane Software</organization>
+        </developer>
+        <developer>
+            <name>Thomas Neidhart</name>
+            <id>tn</id>
+            <email>tn@apache.org</email>
+        </developer>
+        <developer>
+            <name>Rob Tompkins</name>
+            <id>chtompki</id>
+            <email>chtompki@apache.org</email>
+        </developer>
+        <developer>
+            <id>ggregory</id>
+            <name>Gary Gregory</name>
+            <email>ggregory at apache.org</email>
+            <url>https://www.garygregory.com</url>
+            <organization>The Apache Software Foundation</organization>
+            <organizationUrl>https://www.apache.org/</organizationUrl>
+            <roles>
+                <role>PMC Member</role>
+            </roles>
+            <timezone>America/New_York</timezone>
+            <properties>
+                <picUrl>https://people.apache.org/~ggregory/img/garydgregory80.png</picUrl>
+            </properties>
+        </developer>
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>Beluga Behr</name>
+        </contributor>
+        <contributor>
+            <name>Peter Donald</name>
+            <roles>
+                <role>contributed ideas and code from Avalon Excalibur's cli package</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Brian Egge</name>
+            <roles>
+                <role>made the 1.1 release happen</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Duncan Jones</name>
+            <roles>
+                <role>supplied patches</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Berin Loritsch</name>
+            <email>bloritsch@apache.org</email>
+            <roles>
+                <role>helped in the Avalon CLI merge</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Peter Maddocks</name>
+            <email>peter_maddocks@hp.com</email>
+            <organization>Hewlett-Packard</organization>
+            <roles>
+                <role>supplied patch</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Alexandru Mocanu</name>
+            <roles>
+                <role>supplied patch</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Andrew Shirley</name>
+            <roles>
+                <role>lots of fixes for 1.1</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Greg Thomas</name>
+        </contributor>
+        <contributor>
+            <name>Slawek Zachcial</name>
+            <roles>
+                <role>unit tests</role>
+            </roles>
+        </contributor>
+        <contributor>
+            <name>Rubin Simons</name>
+            <email>rubin@raaftech.com</email>
+            <roles>
+                <role>supplied patch</role>
+            </roles>
+        </contributor>
+
+    </contributors>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.evosuite</groupId>
+            <artifactId>evosuite-standalone-runtime</artifactId>
+            <version>1.2.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!--<dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+        </dependency>-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <version>5.5.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.6.2</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.target>1.9</maven.compiler.target>
+        <commons.componentid>cli</commons.componentid>
+        <commons.module.name>org.apache.commons.cli</commons.module.name>
+        <commons.release.version>1.6.0</commons.release.version>
+        <commons.release.name>commons-cli-${commons.release.version}</commons.release.name>
+        <commons.release.isDistModule>true</commons.release.isDistModule>
+        <commons.rc.version>RC1</commons.rc.version>
+        <commons.bc.version>1.5.0</commons.bc.version>
+        <commons.osgi.symbolicName>org.apache.commons.cli</commons.osgi.symbolicName>
+        <commons.jira.id>CLI</commons.jira.id>
+        <commons.jira.pid>12310463</commons.jira.pid>
+        <!-- The RC version used in the staging repository URL. -->
+        <commons.rc.version>RC1</commons.rc.version>
+        <commons.scmPubUrl>https://svn.apache.org/repos/infra/websites/production/commons/content/proper/commons-cli
+        </commons.scmPubUrl>
+        <commons.scmPubCheckoutDirectory>site-content</commons.scmPubCheckoutDirectory>
+        <commons.encoding>utf-8</commons.encoding>
+        <findbugs.skip>true</findbugs.skip>
+        <japicmp.skip>false</japicmp.skip>
+    </properties>
+
+    <build>
+        <defaultGoal>clean verify apache-rat:check japicmp:cmp checkstyle:check spotbugs:check javadoc:javadoc
+        </defaultGoal>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <configuration>
+<includes>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_127_Run_20231025_125643</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_212_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_169_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231025_193245</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231024_082502</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_225_Run_20231024_080105</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231024_082502</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231025_100630</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231028_032631</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_185_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_170_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231024_151954</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231023_214133</include>
+<include>org.apache.commons.cli.ParserTest_Method_116_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231026_105918</include>
+<include>org.apache.commons.cli.ParserTest_Method_117_Run_20231025_215329</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231025_121248</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_210_Run_20231028_012625</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231024_004630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231025_183916</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231028_022628</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_12_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_131_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231028_022628</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231023_195751</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_224_Run_20231025_183916</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231023_195751</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_221_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231027_232619</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_224_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_207_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231026_155023</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_162_Run_20231025_183916</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231026_105918</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231024_080105</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231028_012625</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231023_214133</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_104_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231028_012625</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_227_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_64_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_169_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231025_193245</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231025_183916</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_128_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231024_145023</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_55_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_92_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_156_Run_20231026_105918</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231025_183916</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231023_214133</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231028_012625</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_13_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_144_Run_20231026_155023</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231023_195751</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231025_100630</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231027_212614</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_131_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231030_094427</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionTest_Method_93_Run_20231025_105031</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231025_125643</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_40_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231026_155023</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231028_022628</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_169_Run_20231025_224954</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231023_214133</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_223_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231028_032631</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_68_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionTest_Method_73_Run_20231024_145023</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231030_094427</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231024_060930</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionTest_Method_102_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_100_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231028_032631</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231025_100630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_137_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231027_222616</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_134_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231025_215329</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231028_032631</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_173_Run_20231026_155023</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231024_091429</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231028_032631</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_215_Run_20231025_100630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231024_165833</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231026_155023</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_144_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231030_094427</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_64_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_195_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_64_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_71_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionsTest_Method_13_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_169_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231025_105031</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_212_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231028_012625</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231025_121248</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_221_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231027_222616</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_217_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_102_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_178_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_127_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_213_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_21_Run_20231025_125643</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231030_094427</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231024_082502</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231025_215329</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_65_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231027_222616</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionTest_Method_100_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231025_183916</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_92_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231023_214133</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_66_Run_20231026_105918</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231030_094427</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_134_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231025_105031</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231028_022628</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231028_012625</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231023_214133</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_93_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionsTest_Method_1_Run_20231023_204140</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_154_Run_20231025_224954</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231026_105918</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_105_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231028_032631</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_185_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_103_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_21_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionsTest_Method_2_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231024_082502</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionsTest_Method_12_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231030_094427</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231025_125643</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionsTest_Method_2_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_190_Run_20231026_155023</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231024_060930</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231023_204140</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_34_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_92_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231023_214133</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231027_222616</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231025_100630</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_219_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_213_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_172_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231026_155023</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231028_032631</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_101_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_156_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_169_Run_20231028_042634</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_108_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231028_042634</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231028_022628</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionsTest_Method_10_Run_20231025_105031</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231024_151954</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231025_121248</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_38_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_108_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231025_105031</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231028_032631</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_196_Run_20231024_080105</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_1_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231026_105918</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_160_Run_20231023_195751</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231025_105031</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231026_105918</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231025_183916</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_224_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_197_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_103_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_185_Run_20231025_215329</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_102_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231025_100630</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231028_042634</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_93_Run_20231028_022628</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231025_121248</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231024_004630</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231027_222616</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231028_022628</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231030_094427</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231025_215329</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_153_Run_20231023_214133</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_33_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_73_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231025_105031</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_173_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_128_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_178_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231023_204140</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231025_193245</include>
+<include>org.apache.commons.cli.ParserTest_Method_118_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231023_214133</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231023_195751</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231024_060930</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_210_Run_20231025_121248</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231025_100630</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_127_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231028_022628</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_54_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_139_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_128_Run_20231025_100630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231024_080105</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_71_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_146_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_164_Run_20231026_155023</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_45_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_84_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_13_Run_20231028_052637</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_185_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231023_214133</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231025_100630</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionTest_Method_73_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_104_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231025_183916</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231025_105031</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231028_052637</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231023_214133</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231024_080105</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_193_Run_20231028_032631</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231024_082502</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_56_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231026_105918</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231023_214133</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_71_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_93_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231030_094427</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231026_155023</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231028_032631</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_193_Run_20231024_004630</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231028_042634</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231025_125643</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231025_125643</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_128_Run_20231025_121248</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_141_Run_20231026_155023</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231024_004630</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_172_Run_20231027_222616</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231025_224954</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231024_151954</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_92_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_108_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231023_204140</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231024_080105</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_133_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231026_105918</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_12_Run_20231023_214133</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_131_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_66_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231024_082502</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231028_032631</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_229_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_137_Run_20231024_151954</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_56_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231026_105918</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_66_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_189_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231024_004630</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231024_151954</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_44_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231028_022628</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_88_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231024_082502</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231027_232619</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_101_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_141_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231030_094427</include>
+<include>org.apache.commons.cli.UtilTest_Method_60_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231025_193245</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231024_145023</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_189_Run_20231027_212614</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_140_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_212_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231028_012625</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231028_052637</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231023_204140</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231028_012625</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231024_151954</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_224_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_71_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231025_105031</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_155_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231028_022628</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_85_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231028_042634</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_104_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_194_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_87_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231024_151954</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231025_121248</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231025_105031</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_166_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_101_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231025_215329</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_140_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231023_195751</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_157_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_21_Run_20231027_232619</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_34_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231025_105031</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_33_Run_20231027_232619</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_39_Run_20231026_105918</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_153_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_109_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231025_125643</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_66_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_140_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_88_Run_20231028_012625</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_64_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231025_215329</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_215_Run_20231024_091429</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_134_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_93_Run_20231024_082502</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_221_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_103_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_12_Run_20231027_222616</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231028_012625</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231024_145023</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionTest_Method_110_Run_20231024_080105</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231026_155023</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_221_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_105_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231028_052637</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_137_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_185_Run_20231027_212614</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231025_105031</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231028_052637</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231030_094427</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_161_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231030_094427</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_154_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_189_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_172_Run_20231023_214133</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_66_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231024_145023</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_140_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231023_204140</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_196_Run_20231025_105031</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231030_094427</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231025_224954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231025_100630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_127_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231028_012625</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231024_151954</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_57_Run_20231023_195751</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_133_Run_20231025_105031</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231026_105918</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231025_215329</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231028_052637</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231028_022628</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_134_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231024_145023</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231025_105031</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231027_232619</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_109_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_18_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_170_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231028_052637</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231028_022628</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231024_004630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231024_091429</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_131_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231023_214133</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231024_060930</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231028_042634</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_218_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_155_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231023_214133</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231028_032631</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231028_032631</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_102_Run_20231023_214133</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_220_Run_20231025_224954</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231024_082502</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231027_222616</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231027_222616</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_198_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_13_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231025_183916</include>
+<include>org.apache.commons.cli.ParserTest_Method_115_Run_20231025_193245</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_213_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_1_Run_20231027_232619</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231024_004630</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_21_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231028_052637</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231028_042634</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231023_214133</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231023_195751</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_103_Run_20231025_183916</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231024_145023</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231028_042634</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_195_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231027_222616</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_37_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionTest_Method_107_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_87_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231024_091429</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231030_094427</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231025_100630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231028_032631</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231026_155023</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_154_Run_20231025_215329</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionTest_Method_102_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231025_105031</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_74_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionTest_Method_107_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_72_Run_20231025_105031</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231024_082502</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_203_Run_20231024_091429</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231027_232619</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_197_Run_20231027_222616</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231028_042634</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231024_082502</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231028_012625</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_136_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionTest_Method_83_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231025_215329</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_137_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_151_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionTest_Method_72_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_160_Run_20231028_052637</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_200_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_176_Run_20231024_004630</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_173_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionsTest_Method_7_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_25_Run_20231028_032631</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231023_204140</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231025_125643</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_213_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231025_183916</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231028_012625</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_213_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_140_Run_20231023_214133</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231026_155023</include>
+<include>org.apache.commons.cli.MissingArgumentExceptionTest_Method_32_Run_20231024_151954</include>
+<include>org.apache.commons.cli.UtilTest_Method_60_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_87_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231025_125643</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231027_212614</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionTest_Method_87_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_137_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionsTest_Method_2_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231024_060930</include>
+<include>org.apache.commons.cli.OptionTest_Method_105_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionTest_Method_75_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231028_052637</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231025_183916</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231028_042634</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_154_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionsTest_Method_3_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231025_105031</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231024_165833</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionsTest_Method_10_Run_20231028_052637</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231027_232619</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231027_222616</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231026_155023</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231025_121248</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_215_Run_20231023_204140</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231024_080105</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231024_080105</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionTest_Method_94_Run_20231027_212614</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231028_052637</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_154_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_6_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231030_094427</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_227_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231028_012625</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_187_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231027_232619</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_106_Run_20231025_121248</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_208_Run_20231023_214133</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_213_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_71_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231025_105031</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionTest_Method_92_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionsTest_Method_5_Run_20231024_082502</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_128_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_23_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231023_204140</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231025_183916</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231023_195751</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_13_Run_20231024_091429</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231025_183916</include>
+<include>org.apache.commons.cli.DefaultParserTest_Method_57_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_72_Run_20231023_204140</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionTest_Method_92_Run_20231028_032631</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231024_004630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231028_032631</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231026_155023</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231024_004630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_207_Run_20231027_212614</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_141_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231025_224954</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231024_082502</include>
+<include>org.apache.commons.cli.OptionTest_Method_101_Run_20231025_105031</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231025_125643</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231024_091429</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231024_165833</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_181_Run_20231025_105031</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231028_032631</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231028_032631</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_156_Run_20231025_193245</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231024_004630</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_64_Run_20231026_105918</include>
+<include>org.apache.commons.cli.GnuParserTest_Method_63_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_185_Run_20231027_222616</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_217_Run_20231028_042634</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_205_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_137_Run_20231028_022628</include>
+<include>org.apache.commons.cli.OptionsTest_Method_12_Run_20231027_212614</include>
+<include>org.apache.commons.cli.OptionTest_Method_104_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_98_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_81_Run_20231025_193245</include>
+<include>org.apache.commons.cli.ParserTest_Method_121_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_19_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionsTest_Method_4_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionTest_Method_103_Run_20231028_012625</include>
+<include>org.apache.commons.cli.OptionsTest_Method_14_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_182_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_104_Run_20231028_042634</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_141_Run_20231028_032631</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231025_224954</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_221_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231025_193245</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_216_Run_20231027_222616</include>
+<include>org.apache.commons.cli.AlreadySelectedExceptionTest_Method_154_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_103_Run_20231025_193245</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231024_080105</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_88_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_165_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionsTest_Method_9_Run_20231030_094427</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_183_Run_20231025_193245</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231027_232619</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231030_094427</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_141_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_100_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_79_Run_20231024_145023</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_222_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_209_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231027_212614</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231027_212614</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231024_080105</include>
+<include>org.apache.commons.cli.UnrecognizedOptionExceptionTest_Method_62_Run_20231024_151954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_148_Run_20231024_151954</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_160_Run_20231024_060930</include>
+<include>org.apache.commons.cli.PosixParserTest_Method_27_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231027_222616</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_194_Run_20231025_121248</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_133_Run_20231025_125643</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231024_004630</include>
+<include>org.apache.commons.cli.MissingOptionExceptionTest_Method_228_Run_20231025_215329</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_188_Run_20231028_042634</include>
+<include>org.apache.commons.cli.UtilTest_Method_61_Run_20231024_145023</include>
+<include>org.apache.commons.cli.BasicParserTest_Method_226_Run_20231025_215329</include>
+<include>org.apache.commons.cli.OptionsTest_Method_16_Run_20231028_042634</include>
+<include>org.apache.commons.cli.OptionTest_Method_96_Run_20231025_183916</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231028_012625</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_129_Run_20231023_204140</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_127_Run_20231030_094427</include>
+<include>org.apache.commons.cli.AmbiguousOptionExceptionTest_Method_230_Run_20231024_080105</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_177_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_179_Run_20231026_155023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_210_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_22_Run_20231026_105918</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_93_Run_20231024_080105</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_147_Run_20231023_204140</include>
+<include>org.apache.commons.cli.UtilTest_Method_60_Run_20231025_100630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231024_060930</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_196_Run_20231025_125643</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231025_100630</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionsTest_Method_11_Run_20231025_193245</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_138_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_184_Run_20231027_212614</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_111_Run_20231028_052637</include>
+<include>org.apache.commons.cli.OptionTest_Method_82_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionsTest_Method_13_Run_20231027_222616</include>
+<include>org.apache.commons.cli.OptionsTest_Method_8_Run_20231025_193245</include>
+<include>org.apache.commons.cli.OptionTest_Method_84_Run_20231024_004630</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_217_Run_20231024_165833</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_150_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_24_Run_20231024_145023</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_211_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_91_Run_20231025_224954</include>
+<include>org.apache.commons.cli.OptionValidatorTest_Method_66_Run_20231023_214133</include>
+<include>org.apache.commons.cli.OptionsTest_Method_15_Run_20231028_012625</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231028_032631</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_130_Run_20231027_232619</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231028_032631</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_143_Run_20231023_204140</include>
+<include>org.apache.commons.cli.OptionTest_Method_97_Run_20231024_080105</include>
+<include>org.apache.commons.cli.OptionTest_Method_102_Run_20231024_004630</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_183916</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231026_105918</include>
+<include>org.apache.commons.cli.OptionTest_Method_90_Run_20231025_125643</include>
+<include>org.apache.commons.cli.OptionTest_Method_104_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_78_Run_20231025_183916</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_140_Run_20231024_151954</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_180_Run_20231027_212614</include>
+<include>org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionBuilderTest_Method_160_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_109_Run_20231027_222616</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231024_004630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_214_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionTest_Method_71_Run_20231024_145023</include>
+<include>org.apache.commons.cli.OptionTest_Method_76_Run_20231028_022628</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_135_Run_20231025_121248</include>
+<include>org.apache.commons.cli.OptionGroupTest_Method_21_Run_20231028_052637</include>
+<include>org.apache.commons.cli.TypeHandlerTest_Method_224_Run_20231024_165833</include>
+<include>org.apache.commons.cli.OptionTest_Method_77_Run_20231024_091429</include>
+<include>org.apache.commons.cli.OptionTest_Method_80_Run_20231024_004630</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_193_Run_20231025_224954</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_142_Run_20231023_195751</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_186_Run_20231030_094427</include>
+<include>org.apache.commons.cli.OptionTest_Method_89_Run_20231028_012625</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_149_Run_20231024_060930</include>
+<include>org.apache.commons.cli.CommandLineTest_Method_134_Run_20231023_214133</include>
+<include>org.apache.commons.cli.HelpFormatterTest_Method_206_Run_20231025_105031</include>
+</includes>
+</configuration>
+<artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.1.2</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.rat</groupId>
+                    <artifactId>apache-rat-plugin</artifactId>
+                    <version>${commons.rat.version}</version>
+                    <!-- Should agree with config in build section -->
+                    <configuration>
+                        <excludes>
+                            <exclude>.asf.yaml</exclude>
+                            <exclude>generate_coverage_report.ipynb</exclude>
+                            <exclude>generate_coverage_report.py</exclude>
+                            <exclude>generate_coverage_report_evosuite.py</exclude>
+                            <exclude>src/test/java/org/apache/commons/cli/*</exclude>
+                        </excludes>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <configuration>
+                        <configLocation>${basedir}/src/conf/checkstyle.xml</configLocation>
+                        <suppressionsLocation>${basedir}/src/conf/checkstyle-suppressions.xml</suppressionsLocation>
+                        <enableRulesSummary>false</enableRulesSummary>
+                        <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>com.github.spotbugs</groupId>
+                    <artifactId>spotbugs-maven-plugin</artifactId>
+                    <configuration>
+                        <excludeFilterFile>${basedir}/src/conf/spotbugs-exclude-filter.xml</excludeFilterFile>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-scm-publish-plugin</artifactId>
+                    <configuration>
+                        <ignorePathsToDelete>
+                            <ignorePathToDelete>javadocs**</ignorePathToDelete>
+                        </ignorePathsToDelete>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include>
+                    </includes>
+                </configuration>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptors>
+                        <descriptor>src/assembly/bin.xml</descriptor>
+                        <descriptor>src/assembly/src.xml</descriptor>
+                    </descriptors>
+                    <tarLongFileMode>gnu</tarLongFileMode>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.siom79.japicmp</groupId>
+                <artifactId>japicmp-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.10</version> <!-- Check for the latest version -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>report</id>
+                        <phase>prepare-package</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--<plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.10</version>
+                <executions>
+                    <execution>
+                        <id>pre-unit-test</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                        <configuration>
+                            <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
+                            <propertyName>surefireArgLine</propertyName>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
+                            <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <rules>
+                        <requireJavaVersion>
+                            <version>11</version> <!-- Update to Java 11 -->
+                        </requireJavaVersion>
+                    </rules>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <reporting>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <configuration>
+                    <linksource>true</linksource>
+                    <links>
+                        <link>${commons.javadoc.java.link}</link>
+                    </links>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.rat</groupId>
+                <artifactId>apache-rat-plugin</artifactId>
+                <version>${commons.rat.version}</version>
+                <!-- Should agree with config in build section -->
+                <configuration>
+                    <excludes>
+                        <exclude>.asf.yaml</exclude>
+                    </excludes>
+
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <configuration>
+                    <targetJdk>${maven.compiler.target}</targetJdk>
+
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.siom79.japicmp</groupId>
+                <artifactId>japicmp-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
+
+    <distributionManagement>
+        <site>
+            <id>apache.website</id>
+            <name>Apache Commons Site</name>
+            <url>scm:svn:${commons.scmPubUrl}</url>
+        </site>
+    </distributionManagement>
+
+    <profiles>
+        <profile>
+            <id>rc</id>
+            <distributionManagement>
+                <!-- Cannot define in parent ATM, see COMMONSSITE-26 -->
+                <site>
+                    <id>apache.website</id>
+                    <name>Apache Commons Release Candidate Staging Site</name>
+                    <url>
+                        ${commons.deployment.protocol}://people.apache.org/www/people.apache.org/builds/commons/${commons.componentid}/${commons.release.version}/${commons.rc.version}/site
+                    </url>
+                </site>
+            </distributionManagement>
+        </profile>
+        <profile>
+            <id>setup-checkout</id>
+            <activation>
+                <file>
+                    <missing>site-content</missing>
+                </file>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>3.1.0</version>
+                        <executions>
+                            <execution>
+                                <id>prepare-checkout</id>
+                                <phase>pre-site</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <exec executable="svn">
+                                            <arg line="checkout --depth immediates ${commons.scmPubUrl} ${commons.scmPubCheckoutDirectory}"/>
+                                        </exec>
+
+                                        <exec executable="svn">
+                                            <arg line="update --set-depth exclude ${commons.scmPubCheckoutDirectory}/javadocs"/>
+                                        </exec>
+
+                                        <pathconvert pathsep=" " property="dirs">
+                                            <dirset dir="${commons.scmPubCheckoutDirectory}" includes="*"/>
+                                        </pathconvert>
+                                        <exec executable="svn">
+                                            <arg line="update --set-depth infinity ${dirs}"/>
+                                        </exec>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+</project>
+

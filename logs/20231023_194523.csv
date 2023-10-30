@@ -1,0 +1,6 @@
+project_name,method_id,event,result_code,add_info
+commons-cli-master;82;Other Error;1;list indices must be integers or slices, not str
+commons-cli-master;83;Other Error;1;list indices must be integers or slices, not str
+commons-cli-master;84;Other Error;1;'list' object has no attribute 'json'
+commons-cli-master;81;Other Error;1;'list' object has no attribute 'json'
+commons-cli-master;85;Other Error;1;list indices must be integers or slices, not str

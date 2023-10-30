@@ -1,0 +1,26 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+JaCoCo Coverage Report,org.apache.commons.cli,PosixParser,314,0,52,0,68,0,33,0,7,0
+JaCoCo Coverage Report,org.apache.commons.cli,MissingArgumentException,0,16,0,0,0,6,0,3,0,3
+JaCoCo Coverage Report,org.apache.commons.cli,CommandLine,214,129,31,15,45,30,35,15,16,11
+JaCoCo Coverage Report,org.apache.commons.cli,HelpFormatter,483,447,87,33,100,112,67,35,16,26
+JaCoCo Coverage Report,org.apache.commons.cli,Option.Builder,68,40,5,3,21,13,14,6,11,5
+JaCoCo Coverage Report,org.apache.commons.cli,DefaultParser.Builder,24,0,0,0,8,0,4,0,4,0
+JaCoCo Coverage Report,org.apache.commons.cli,DefaultParser,718,291,148,42,147,70,105,20,15,15
+JaCoCo Coverage Report,org.apache.commons.cli,ParseException,0,4,0,0,0,2,0,1,0,1
+JaCoCo Coverage Report,org.apache.commons.cli,OptionValidator,23,47,7,9,3,11,6,6,1,3
+JaCoCo Coverage Report,org.apache.commons.cli,Options,151,146,13,9,32,30,16,13,8,10
+JaCoCo Coverage Report,org.apache.commons.cli,Option,265,260,41,27,59,64,50,33,22,27
+JaCoCo Coverage Report,org.apache.commons.cli,OptionBuilder,144,0,4,0,62,0,23,0,21,0
+JaCoCo Coverage Report,org.apache.commons.cli,Parser,389,3,76,0,103,1,50,1,12,1
+JaCoCo Coverage Report,org.apache.commons.cli,HelpFormatter.OptionComparator,0,6,0,0,0,1,0,1,0,1
+JaCoCo Coverage Report,org.apache.commons.cli,Util,30,32,8,6,4,9,7,4,1,3
+JaCoCo Coverage Report,org.apache.commons.cli,PatternOptionBuilder,166,0,44,0,42,0,31,0,5,0
+JaCoCo Coverage Report,org.apache.commons.cli,UnrecognizedOptionException,8,7,0,0,3,3,2,1,2,1
+JaCoCo Coverage Report,org.apache.commons.cli,AmbiguousOptionException,0,61,0,4,0,16,0,5,0,3
+JaCoCo Coverage Report,org.apache.commons.cli,CommandLine.Builder,6,17,0,0,2,5,1,3,1,3
+JaCoCo Coverage Report,org.apache.commons.cli,BasicParser,0,5,0,0,0,2,0,2,0,2
+JaCoCo Coverage Report,org.apache.commons.cli,GnuParser,143,0,20,0,28,0,12,0,2,0
+JaCoCo Coverage Report,org.apache.commons.cli,AlreadySelectedException,32,0,0,0,10,0,5,0,5,0
+JaCoCo Coverage Report,org.apache.commons.cli,MissingOptionException,3,53,0,6,1,14,1,6,1,3
+JaCoCo Coverage Report,org.apache.commons.cli,OptionGroup,101,28,14,0,27,8,11,5,4,5
+JaCoCo Coverage Report,org.apache.commons.cli,TypeHandler,163,0,20,0,45,0,21,0,11,0

@@ -1,0 +1,260 @@
+project_name,method_id,event,result_code,add_info
+commons-cli-master;61;Other Error;1;0
+commons-cli-master;57;Other Error;1;0
+commons-cli-master;1;Other Error;1;0
+commons-cli-master;49;Other Error;1;0
+commons-cli-master;53;Other Error;1;0
+commons-cli-master;13;Other Error;1;0
+commons-cli-master;29;Other Error;1;0
+commons-cli-master;45;Other Error;1;0
+commons-cli-master;17;Other Error;1;0
+commons-cli-master;33;Other Error;1;0
+commons-cli-master;58;Other Error;1;0
+commons-cli-master;62;Other Error;1;0
+commons-cli-master;14;Other Error;1;0
+commons-cli-master;54;Other Error;1;0
+commons-cli-master;46;Other Error;1;0
+commons-cli-master;18;Other Error;1;0
+commons-cli-master;55;Other Error;1;0
+commons-cli-master;47;Other Error;1;0
+commons-cli-master;63;Other Error;1;0
+commons-cli-master;15;Other Error;1;0
+commons-cli-master;9;Compilation Successful Round 0;0;
+commons-cli-master;25;Compilation Successful Round 0;0;
+commons-cli-master;64;Other Error;1;0
+commons-cli-master;5;Compilation Successful Round 0;0;
+commons-cli-master;30;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;65;Other Error;1;0
+commons-cli-master;37;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;50;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;31;Other Error;1;0
+commons-cli-master;19;Compilation Successful Round 0;0;
+commons-cli-master;19;Execution Successful after 0 repairs;0;
+commons-cli-master;38;Other Error;1;0
+commons-cli-master;32;Other Error;1;0
+commons-cli-master;21;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;9;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;20;Other Error;1;0
+commons-cli-master;22;Other Error;1;0
+commons-cli-master;39;Other Error;1;0
+commons-cli-master;59;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;69;Other Error;1;0
+commons-cli-master;51;Class Name Extraction Error;1;
+commons-cli-master;41;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;2;Compilation Successful Round 1;0;
+commons-cli-master;2;Execution Successful after 0 repairs;0;
+commons-cli-master;25;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;10;Other Error;1;0
+commons-cli-master;23;Other Error;1;0
+commons-cli-master;40;Other Error;1;0
+commons-cli-master;48;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;66;Compilation Successful Round 0;0;
+commons-cli-master;66;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;42;Other Error;1;0
+commons-cli-master;26;Other Error;1;0
+commons-cli-master;11;Other Error;1;0
+commons-cli-master;24;Other Error;1;0
+commons-cli-master;43;Other Error;1;0
+commons-cli-master;81;Other Error;1;0
+commons-cli-master;56;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;89;Other Error;1;0
+commons-cli-master;73;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;60;Class Name Extraction Error;1;
+commons-cli-master;74;Other Error;1;0
+commons-cli-master;5;Compilation Error during Execution Repair Round 2;1;
+commons-cli-master;5;Execution Error after after 1 repairs;1; Failures (1):   JUnit Jupiter:OptionsTest_Method_5_Run_20231022_125556:testAddOptionGroup()     MethodSource [className = 'org.apache.commons.cli.OptionsTest_Method_5_Run_20231022_125556', methodName = 'testAddOptionGroup', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <1> but was: <0>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)        org.apache.commons.cli.OptionsTest_Method_5_Run_20231022_125556.testAddOptionGroup(OptionsTest_Method_5_Run_20231022_125556.java:27)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 976 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         1 tests found           ] [         0 tests skipped         ] [         1 tests started         ] [         0 tests aborted         ] [         0 tests successful      ] [         1 tests failed          ]  
+commons-cli-master;6;Other Error;1;0
+commons-cli-master;12;Compilation Successful Round 0;0;
+commons-cli-master;82;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;27;Class Name Extraction Error;1;
+commons-cli-master;52;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;77;Compilation Successful Round 0;0;
+commons-cli-master;12;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;12;Execution Error after after 0 repairs;1; Failures (2):   JUnit Jupiter:OptionsTest_Method_12_Run_20231022_125556:testGetRequiredOptionsOneOption()     MethodSource [className = 'org.apache.commons.cli.OptionsTest_Method_12_Run_20231022_125556', methodName = 'testGetRequiredOptionsOneOption', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <Mock for Option, hashCode: 1537912396> but was: <null>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.OptionsTest_Method_12_Run_20231022_125556.testGetRequiredOptionsOneOption(OptionsTest_Method_12_Run_20231022_125556.java:31)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]   JUnit Jupiter:OptionsTest_Method_12_Run_20231022_125556:testGetRequiredOptionsMultipleOptions()     MethodSource [className = 'org.apache.commons.cli.OptionsTest_Method_12_Run_20231022_125556', methodName = 'testGetRequiredOptionsMultipleOptions', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <2> but was: <1>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)        org.apache.commons.cli.OptionsTest_Method_12_Run_20231022_125556.testGetRequiredOptionsMultipleOptions(OptionsTest_Method_12_Run_20231022_125556.java:44)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 539 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         3 tests found           ] [         0 tests skipped         ] [         3 tests started         ] [         0 tests aborted         ] [         1 tests successful      ] [         2 tests failed          ]  
+commons-cli-master;77;Execution Successful after 0 repairs;0;
+commons-cli-master;90;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;93;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;85;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;16;Compilation Error Round 3;1;/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionsTest_Method_16_Run_20231022_125556.java:4: error: cannot find symbol @ExtendWith(MockitoExtension.class)  ^   symbol: class ExtendWith /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionsTest_Method_16_Run_20231022_125556.java:4: error: cannot find symbol @ExtendWith(MockitoExtension.class)             ^   symbol: class MockitoExtension 2 errors 
+commons-cli-master;78;Other Error;1;0
+commons-cli-master;79;Other Error;1;0
+commons-cli-master;70;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;7;Compilation Successful Round 0;0;
+commons-cli-master;67;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;7;Execution Successful after 0 repairs;0;
+commons-cli-master;97;Compilation Successful Round 0;0;
+commons-cli-master;97;Execution Successful after 0 repairs;0;
+commons-cli-master;71;Other Error;1;0
+commons-cli-master;8;Other Error;1;0
+commons-cli-master;28;Class Name Extraction Error;1;
+commons-cli-master;109;Other Error;1;0
+commons-cli-master;101;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;113;Other Error;1;0
+commons-cli-master;91;Compilation Successful Round 0;0;
+commons-cli-master;91;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;80;Compilation Successful Round 0;0;
+commons-cli-master;80;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;102;Other Error;1;0
+commons-cli-master;92;Other Error;1;0
+commons-cli-master;83;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;34;Compilation Error Round 3;1;/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_34_Run_20231022_125556.java:7: error: class DefaultParser is public, should be declared in a file named DefaultParser.java public class DefaultParser {        ^ 1 error 
+commons-cli-master;86;Compilation Successful Round 1;0;
+commons-cli-master;86;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;94;Class Name Extraction Error;1;
+commons-cli-master;117;Other Error;1;0
+commons-cli-master;121;Other Error;1;0
+commons-cli-master;72;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;105;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;87;Other Error;1;0
+commons-cli-master;118;Other Error;1;0
+commons-cli-master;122;Other Error;1;0
+commons-cli-master;125;Other Error;1;0
+commons-cli-master;119;Other Error;1;0
+commons-cli-master;123;Other Error;1;0
+commons-cli-master;106;Other Error;1;0
+commons-cli-master;88;Other Error;1;0
+commons-cli-master;126;Other Error;1;0
+commons-cli-master;107;Other Error;1;0
+commons-cli-master;103;Class Name Extraction Error;1;
+commons-cli-master;95;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;68;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;108;Other Error;1;0
+commons-cli-master;137;Other Error;1;0
+commons-cli-master;114;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;75;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_75_Run_20231022_125556.java:11: error: class OptionTest is public, should be declared in a file named OptionTest.java public class OptionTest {        ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_75_Run_20231022_125556.java:8: error: cannot find symbol import org.apache.commons.cli.MyOption;                              ^   symbol:   class MyOption   location: package org.apache.commons.cli /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_75_Run_20231022_125556.java:15: error: cannot find symbol         MyOption option1 = new MyOption(""option1"", ""option1"");         ^   symbol:   class MyOption   location: class OptionTest /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_75_Run_20231022_125556.java:15: error: cannot find symbol         MyOption option1 = new MyOption(""option1"", ""option1"");                                ^   symbol:   class MyOption   location: class OptionTest /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_75_Run_20231022_125556.java:16: error: cannot find symbol         MyOption option2 = new MyOption(""option2"", ""option2"");         ^   symbol:   class MyOption   location: class OptionTest /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_75_Run_20231022_125556.java:16: error: cannot find symbol         MyOption option2 = new MyOption(""option2"", ""option2"");                                ^   symbol:   class MyOption   location: class OptionTest 6 errors "
+commons-cli-master;115;Other Error;1;0
+commons-cli-master;96;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;76;Other Error;1;0
+commons-cli-master;104;Class Name Extraction Error;1;
+commons-cli-master;98;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_98_Run_20231022_125556.java:22: error: incompatible types: String cannot be converted to boolean         option = new Option(""c"", ""true"", ""This option is required with a default value"", ""default"");                                          ^ Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output 1 error "
+commons-cli-master;116;Other Error;1;0
+commons-cli-master;149;Other Error;1;0
+commons-cli-master;145;Other Error;1;0
+commons-cli-master;99;Other Error;1;0
+commons-cli-master;129;Compilation Successful Round 0;0;
+commons-cli-master;129;Execution Successful after 0 repairs;0;
+commons-cli-master;110;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_110_Run_20231022_125556.java:14: error: incompatible types: String cannot be converted to boolean         option = new Option(""b"", ""This is option b"", Boolean.TRUE);                                  ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_110_Run_20231022_125556.java:17: error: incompatible types: Boolean cannot be converted to String         option = new Option(""c"", ""This is option c"", Boolean.TRUE, Boolean.TRUE);                                                                           ^ Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output 2 errors "
+commons-cli-master;153;Other Error;1;0
+commons-cli-master;150;Other Error;1;0
+commons-cli-master;111;Other Error;1;0
+commons-cli-master;112;Other Error;1;0
+commons-cli-master;35;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;36;Other Error;1;0
+commons-cli-master;161;Other Error;1;0
+commons-cli-master;3;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionsTest_Method_3_Run_20231022_125556.java:3: error: class, interface, enum, or record expected Option optionGroup = Option.builder(""test-option"").longOpt(""This is a test option."").build(); ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionsTest_Method_3_Run_20231022_125556.java:4: error: class, interface, enum, or record expected options.addOptionGroup(() -> optionGroup); ^ 2 errors "
+commons-cli-master;127;Compilation Successful Round 2;0;
+commons-cli-master;162;Other Error;1;0
+commons-cli-master;4;Other Error;1;0
+commons-cli-master;44;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:34: error: incompatible types: Options cannot be converted to boolean         parser = new DefaultParser(options);                                    ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:45: error: handleShortAndLongOption(String) has private access in DefaultParser         parser.handleShortAndLongOption(token);               ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:50: error: cannot find symbol         verify(option).handleOption(option);                       ^   symbol:   method handleOption(Option)   location: class Option /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:61: error: handleShortAndLongOption(String) has private access in DefaultParser         parser.handleShortAndLongOption(token);               ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:66: error: cannot find symbol         verify(option).handleOption(option);                       ^   symbol:   method handleOption(Option)   location: class Option /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:78: error: handleShortAndLongOption(String) has private access in DefaultParser         parser.handleShortAndLongOption(token);               ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/DefaultParserTest_Method_44_Run_20231022_125556.java:83: error: cannot find symbol         verify(option).handleOption(option);                       ^   symbol:   method handleOption(Option)   location: class Option Note: /Users/florianmende/Documents/Development/thesis/implementation/build/compiled_projects/commons-cli-master/commons-cli-1.6.0-SNAPSHOT-sources.jar(/org/apache/commons/cli/DefaultParser.java) uses unchecked or unsafe operations. Note: Recompile with -Xlint:unchecked for details. Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output 7 errors "
+commons-cli-master;141;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;163;Other Error;1;0
+commons-cli-master;124;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;138;Compilation Successful Round 1;0;
+commons-cli-master;154;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;138;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;120;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;173;Other Error;1;0
+commons-cli-master;139;Other Error;1;0
+commons-cli-master;151;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;165;Class Name Extraction Error;1;
+commons-cli-master;133;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;169;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;177;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;84;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:20: error: unreported exception NoSuchMethodException; must be caught or declared to be thrown         Method hasNoValuesMethod = Option.class.getDeclaredMethod(""hasNoValues"");                                                                  ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:22: error: unreported exception IllegalAccessException; must be caught or declared to be thrown         when(hasNoValuesMethod.invoke(option)).thenReturn(true);                                      ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:29: error: unreported exception NoSuchMethodException; must be caught or declared to be thrown         Method hasNoValuesMethod = Option.class.getDeclaredMethod(""hasNoValues"");                                                                  ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:31: error: unreported exception IllegalAccessException; must be caught or declared to be thrown         when(hasNoValuesMethod.invoke(option)).thenReturn(false);                                      ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:32: error: unreported exception NoSuchMethodException; must be caught or declared to be thrown         Method getValuesMethod = Option.class.getDeclaredMethod(""getValues"");                                                                ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:34: error: unreported exception IllegalAccessException; must be caught or declared to be thrown         when(getValuesMethod.invoke(option)).thenReturn(new String[] {""value1""});                                    ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:41: error: unreported exception NoSuchMethodException; must be caught or declared to be thrown         Method hasNoValuesMethod = Option.class.getDeclaredMethod(""hasNoValues"");                                                                  ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:43: error: unreported exception IllegalAccessException; must be caught or declared to be thrown         when(hasNoValuesMethod.invoke(option)).thenReturn(false);                                      ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:44: error: unreported exception NoSuchMethodException; must be caught or declared to be thrown         Method getValuesMethod = Option.class.getDeclaredMethod(""getValues"");                                                                ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_125556.java:46: error: unreported exception IllegalAccessException; must be caught or declared to be thrown         when(getValuesMethod.invoke(option)).thenReturn(new String[] {""value1"", ""value2""});                                    ^ 10 errors "
+commons-cli-master;100;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;142;Compilation Successful Round 0;0;
+commons-cli-master;174;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;127;Execution Error after after 2 repairs;1; Failures (1):   JUnit Jupiter:CommandLineTest_Method_127_Run_20231022_125556:testAddInvalidArg()     MethodSource [className = 'org.apache.commons.cli.CommandLineTest_Method_127_Run_20231022_125556', methodName = 'testAddInvalidArg', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)        org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)        org.apache.commons.cli.CommandLineTest_Method_127_Run_20231022_125556.testAddInvalidArg(CommandLineTest_Method_127_Run_20231022_125556.java:33)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        java.base/java.lang.reflect.Method.invoke(Method.java:568)        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)        [...]  Test run finished after 54 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         3 tests found           ] [         0 tests skipped         ] [         3 tests started         ] [         0 tests aborted         ] [         2 tests successful      ] [         1 tests failed          ]  
+commons-cli-master;181;Other Error;1;0
+commons-cli-master;175;Other Error;1;0
+commons-cli-master;140;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;146;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;130;Compilation Successful Round 2;0;
+commons-cli-master;130;Execution Successful after 0 repairs;0;
+commons-cli-master;182;Other Error;1;0
+commons-cli-master;176;Other Error;1;0
+commons-cli-master;147;Other Error;1;0
+commons-cli-master;189;Other Error;1;0
+commons-cli-master;155;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;170;Compilation Successful Round 0;0;
+commons-cli-master;157;Compilation Error Round 3;1;/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionBuilderTest_Method_157_Run_20231022_125556.java:6: error: class OptionBuilderTest is public, should be declared in a file named OptionBuilderTest.java public class OptionBuilderTest {        ^ 1 error 
+commons-cli-master;166;Compilation Successful Round 0;0;
+commons-cli-master;166;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;142;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;148;Other Error;1;name 'method_id' is not defined
+commons-cli-master;143;Other Error;1;0
+commons-cli-master;128;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;197;Other Error;1;0
+commons-cli-master;170;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;144;Other Error;1;0
+commons-cli-master;178;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;201;Other Error;1;0
+commons-cli-master;198;Other Error;1;0
+commons-cli-master;205;Other Error;1;0
+commons-cli-master;131;Compilation Successful Round 0;0;
+commons-cli-master;131;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;167;Class Name Extraction Error;1;
+commons-cli-master;158;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;185;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;202;Other Error;1;0
+commons-cli-master;156;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;199;Other Error;1;0
+commons-cli-master;132;Other Error;1;0
+commons-cli-master;134;Compilation Successful Round 1;0;
+commons-cli-master;183;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;193;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;186;Other Error;1;0
+commons-cli-master;159;Other Error;1;0
+commons-cli-master;184;Other Error;1;0
+commons-cli-master;152;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;209;Other Error;1;0
+commons-cli-master;200;Other Error;1;0
+commons-cli-master;203;Other Error;1;0
+commons-cli-master;179;Compilation Successful Round 0;0;
+commons-cli-master;179;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;194;Other Error;1;0
+commons-cli-master;217;Other Error;1;0
+commons-cli-master;210;Other Error;1;0
+commons-cli-master;225;Other Error;1;0
+commons-cli-master;187;Other Error;1;0
+commons-cli-master;134;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;134;Execution Error after after 0 repairs;1; Failures (2):   JUnit Jupiter:CommandLineTest_Method_134_Run_20231022_125556:testGetOptionProperties_multipleOptions()     MethodSource [className = 'org.apache.commons.cli.CommandLineTest_Method_134_Run_20231022_125556', methodName = 'testGetOptionProperties_multipleOptions', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <2> but was: <1>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)        org.apache.commons.cli.CommandLineTest_Method_134_Run_20231022_125556.testGetOptionProperties_multipleOptions(CommandLineTest_Method_134_Run_20231022_125556.java:65)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]   JUnit Jupiter:CommandLineTest_Method_134_Run_20231022_125556:testGetOptionProperties_singleOption()     MethodSource [className = 'org.apache.commons.cli.CommandLineTest_Method_134_Run_20231022_125556', methodName = 'testGetOptionProperties_singleOption', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <value> but was: <null>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.CommandLineTest_Method_134_Run_20231022_125556.testGetOptionProperties_singleOption(CommandLineTest_Method_134_Run_20231022_125556.java:45)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 1277 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         3 tests found           ] [         0 tests skipped         ] [         3 tests started         ] [         0 tests aborted         ] [         1 tests successful      ] [         2 tests failed          ]  
+commons-cli-master;190;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;180;Other Error;1;0
+commons-cli-master;226;Other Error;1;0
+commons-cli-master;211;Other Error;1;0
+commons-cli-master;218;Other Error;1;0
+commons-cli-master;195;Other Error;1;0
+commons-cli-master;135;Other Error;1;0
+commons-cli-master;188;Other Error;1;0
+commons-cli-master;221;Compilation Successful Round 0;0;
+commons-cli-master;171;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;221;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;229;Other Error;1;0
+commons-cli-master;212;Other Error;1;0
+commons-cli-master;136;Other Error;1;0
+commons-cli-master;172;Other Error;1;0
+commons-cli-master;160;Class Name Extraction Error;1;
+commons-cli-master;230;Other Error;1;0
+commons-cli-master;168;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;213;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;206;Compilation Successful Round 1;0;
+commons-cli-master;206;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;219;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;214;Other Error;1;0
+commons-cli-master;222;Compilation Successful Round 0;0;
+commons-cli-master;207;Other Error;1;0
+commons-cli-master;222;Execution Successful after 0 repairs;0;
+commons-cli-master;220;Other Error;1;0
+commons-cli-master;204;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;215;Other Error;1;0
+commons-cli-master;223;Other Error;1;0
+commons-cli-master;224;Other Error;1;0
+commons-cli-master;227;Compilation Successful Round 1;0;
+commons-cli-master;227;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;191;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;216;Other Error;1;name 'method_id' is not defined
+commons-cli-master;196;Other Error;1;name 'method_id' is not defined
+commons-cli-master;208;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;192;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;228;Compilation Repair Prompt Construction Error Round 2;1;

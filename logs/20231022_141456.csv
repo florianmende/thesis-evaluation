@@ -1,0 +1,276 @@
+project_name,method_id,event,result_code,add_info
+commons-cli-master;1;Other Error;1;0
+commons-cli-master;57;Other Error;1;0
+commons-cli-master;33;Other Error;1;0
+commons-cli-master;17;Other Error;1;0
+commons-cli-master;61;Other Error;1;0
+commons-cli-master;5;Other Error;1;0
+commons-cli-master;25;Other Error;1;0
+commons-cli-master;41;Other Error;1;0
+commons-cli-master;21;Other Error;1;0
+commons-cli-master;37;Other Error;1;0
+commons-cli-master;2;Other Error;1;0
+commons-cli-master;18;Other Error;1;0
+commons-cli-master;22;Other Error;1;0
+commons-cli-master;42;Other Error;1;0
+commons-cli-master;26;Other Error;1;0
+commons-cli-master;38;Other Error;1;0
+commons-cli-master;9;Compilation Successful Round 0;0;
+commons-cli-master;9;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;29;Other Error;1;name 'method_id' is not defined
+commons-cli-master;53;Class Name Extraction Error;1;
+commons-cli-master;13;Compilation Successful Round 0;0;
+commons-cli-master;13;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;34;Class Name Extraction Error;1;
+commons-cli-master;19;Other Error;1;0
+commons-cli-master;6;Class Name Extraction Error;1;
+commons-cli-master;62;Compilation Successful Round 0;0;
+commons-cli-master;62;Execution Successful after 0 repairs;0;
+commons-cli-master;30;Other Error;1;0
+commons-cli-master;43;Other Error;1;0
+commons-cli-master;39;Other Error;1;0
+commons-cli-master;63;Other Error;1;0
+commons-cli-master;23;Other Error;1;0
+commons-cli-master;3;Other Error;1;0
+commons-cli-master;14;Other Error;1;0
+commons-cli-master;7;Other Error;1;0
+commons-cli-master;31;Other Error;1;0
+commons-cli-master;44;Other Error;1;0
+commons-cli-master;64;Other Error;1;0
+commons-cli-master;32;Other Error;1;0
+commons-cli-master;40;Other Error;1;0
+commons-cli-master;65;Other Error;1;0
+commons-cli-master;54;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;69;Other Error;1;0
+commons-cli-master;66;Other Error;1;0
+commons-cli-master;58;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;20;Compilation Successful Round 0;0;
+commons-cli-master;70;Other Error;1;0
+commons-cli-master;67;Other Error;1;0
+commons-cli-master;35;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;68;Other Error;1;0
+commons-cli-master;45;Other Error;1;0
+commons-cli-master;27;Compilation Successful Round 0;0;
+commons-cli-master;27;Execution Successful after 0 repairs;0;
+commons-cli-master;49;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;15;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;36;Other Error;1;0
+commons-cli-master;10;Compilation Successful Round 0;0;
+commons-cli-master;8;Compilation Successful Round 0;0;
+commons-cli-master;10;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;8;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;55;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;50;Other Error;1;0
+commons-cli-master;4;Other Error;1;name 'method_id' is not defined
+commons-cli-master;77;Compilation Successful Round 0;0;
+commons-cli-master;77;Execution Successful after 0 repairs;0;
+commons-cli-master;59;Class Name Extraction Error;1;
+commons-cli-master;24;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;93;Other Error;1;0
+commons-cli-master;71;Compilation Successful Round 0;0;
+commons-cli-master;97;Other Error;1;0
+commons-cli-master;85;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;98;Other Error;1;0
+commons-cli-master;51;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;94;Compilation Successful Round 0;0;
+commons-cli-master;73;Other Error;1;name 'method_id' is not defined
+commons-cli-master;99;Other Error;1;0
+commons-cli-master;16;Compilation Successful Round 1;0;
+commons-cli-master;16;Execution Successful after 0 repairs;0;
+commons-cli-master;56;Compilation Successful Round 0;0;
+commons-cli-master;20;Execution Error after after 2 repairs;1; Failures (2):   JUnit Jupiter:OptionGroupTest_Method_20_Run_20231022_141456:testGetOptions_required()     MethodSource [className = 'org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231022_141456', methodName = 'testGetOptions_required', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <2> but was: <1>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)        org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231022_141456.testGetOptions_required(OptionGroupTest_Method_20_Run_20231022_141456.java:46)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]   JUnit Jupiter:OptionGroupTest_Method_20_Run_20231022_141456:testGetOptions_withOptions()     MethodSource [className = 'org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231022_141456', methodName = 'testGetOptions_withOptions', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <2> but was: <1>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:528)        org.apache.commons.cli.OptionGroupTest_Method_20_Run_20231022_141456.testGetOptions_withOptions(OptionGroupTest_Method_20_Run_20231022_141456.java:32)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 933 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         3 tests found           ] [         0 tests skipped         ] [         3 tests started         ] [         0 tests aborted         ] [         1 tests successful      ] [         2 tests failed          ]  
+commons-cli-master;46;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;56;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;74;Other Error;1;0
+commons-cli-master;60;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;105;Other Error;1;0
+commons-cli-master;78;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;79;Other Error;1;0
+commons-cli-master;86;Compilation Successful Round 0;0;
+commons-cli-master;86;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;94;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;94;Execution Error after after 0 repairs;1; Failures (1):   JUnit Jupiter:OptionTest_Method_94_Run_20231022_141456:testHasLongOpt()     MethodSource [className = 'org.apache.commons.cli.OptionTest_Method_94_Run_20231022_141456', methodName = 'testHasLongOpt', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <false> but was: <true>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)        org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)        org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:31)        org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:228)        org.apache.commons.cli.OptionTest_Method_94_Run_20231022_141456.testHasLongOpt(OptionTest_Method_94_Run_20231022_141456.java:15)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 34 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         1 tests found           ] [         0 tests skipped         ] [         1 tests started         ] [         0 tests aborted         ] [         0 tests successful      ] [         1 tests failed          ]  
+commons-cli-master;80;Other Error;1;0
+commons-cli-master;87;Other Error;1;0
+commons-cli-master;95;Other Error;1;0
+commons-cli-master;88;Other Error;1;0
+commons-cli-master;106;Compilation Successful Round 0;0;
+commons-cli-master;106;Execution Successful after 0 repairs;0;
+commons-cli-master;117;Other Error;1;0
+commons-cli-master;47;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;52;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;118;Other Error;1;0
+commons-cli-master;113;Compilation Successful Round 0;0;
+commons-cli-master;75;Compilation Successful Round 0;0;
+commons-cli-master;11;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;75;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;109;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;89;Compilation Successful Round 3;0;
+commons-cli-master;12;Other Error;1;0
+commons-cli-master;76;Other Error;1;0
+commons-cli-master;89;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;81;Compilation Successful Round 3;0;
+commons-cli-master;81;Execution Successful after 0 repairs;0;
+commons-cli-master;71;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;96;Compilation Successful Round 0;0;
+commons-cli-master;125;Class Name Extraction Error;1;
+commons-cli-master;126;Other Error;1;0
+commons-cli-master;28;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/PosixParserTest_Method_28_Run_20231022_141456.java:23: error: gobble(Iterator<String>) has private access in PosixParser         parser.gobble(iter);               ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/PosixParserTest_Method_28_Run_20231022_141456.java:26: error: eatTheRest has private access in PosixParser         parser.eatTheRest = true;               ^ /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/PosixParserTest_Method_28_Run_20231022_141456.java:27: error: gobble(Iterator<String>) has private access in PosixParser         parser.gobble(iter);               ^ Note: /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/PosixParserTest_Method_28_Run_20231022_141456.java uses or overrides a deprecated API. Note: Recompile with -Xlint:deprecation for details. 3 errors "
+commons-cli-master;121;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;110;Compilation Successful Round 0;0;
+commons-cli-master;96;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;129;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;82;Compilation Successful Round 0;0;
+commons-cli-master;130;Other Error;1;0
+commons-cli-master;122;Other Error;1;0
+commons-cli-master;141;Other Error;1;0
+commons-cli-master;90;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;113;Compilation Error during Execution Repair Round 2;1;
+commons-cli-master;113;Execution Error after after 1 repairs;1; Failures (1):   JUnit Jupiter:PatternOptionBuilderTest_Method_113_Run_20231022_141456:testParsePatternWithOneOption()     MethodSource [className = 'org.apache.commons.cli.PatternOptionBuilderTest_Method_113_Run_20231022_141456', methodName = 'testParsePatternWithOneOption', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <Mock for Options, hashCode: 235162442> but was: <[ Options: [ short {a=[ option: a  :: null ]} ] [ long {} ]>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.PatternOptionBuilderTest_Method_113_Run_20231022_141456.testParsePatternWithOneOption(PatternOptionBuilderTest_Method_113_Run_20231022_141456.java:31)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 538 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         1 tests found           ] [         0 tests skipped         ] [         1 tests started         ] [         0 tests aborted         ] [         0 tests successful      ] [         1 tests failed          ]  
+commons-cli-master;131;Other Error;1;0
+commons-cli-master;123;Other Error;1;0
+commons-cli-master;91;Other Error;1;0
+commons-cli-master;110;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;101;Compilation Successful Round 3;0;
+commons-cli-master;107;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;114;Other Error;1;0
+commons-cli-master;115;Other Error;1;0
+commons-cli-master;48;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;108;Other Error;1;0
+commons-cli-master;82;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;82;Execution Error after after 0 repairs;1; Failures (1):   JUnit Jupiter:OptionTest_Method_82_Run_20231022_141456:testGetOpt()     MethodSource [className = 'org.apache.commons.cli.OptionTest_Method_82_Run_20231022_141456', methodName = 'testGetOpt', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)        org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)        org.apache.commons.cli.OptionTest_Method_82_Run_20231022_141456.testGetOpt(OptionTest_Method_82_Run_20231022_141456.java:21)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        java.base/java.lang.reflect.Method.invoke(Method.java:568)        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)        [...]  Test run finished after 72 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         1 tests found           ] [         0 tests skipped         ] [         1 tests started         ] [         0 tests aborted         ] [         0 tests successful      ] [         1 tests failed          ]  
+commons-cli-master;101;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;101;Execution Error after after 0 repairs;1; Failures (2):   JUnit Jupiter:OptionTest_Method_101_Run_20231022_141456:testSetArgNameAlreadySet()     MethodSource [className = 'org.apache.commons.cli.OptionTest_Method_101_Run_20231022_141456', methodName = 'testSetArgNameAlreadySet', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown.        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)        org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)        org.apache.commons.cli.OptionTest_Method_101_Run_20231022_141456.testSetArgNameAlreadySet(OptionTest_Method_101_Run_20231022_141456.java:27)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        java.base/java.lang.reflect.Method.invoke(Method.java:568)        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)        [...]   JUnit Jupiter:OptionTest_Method_101_Run_20231022_141456:testSetArgNameNull()     MethodSource [className = 'org.apache.commons.cli.OptionTest_Method_101_Run_20231022_141456', methodName = 'testSetArgNameNull', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: Expected java.lang.IllegalArgumentException to be thrown, but nothing was thrown.        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)        org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)        org.apache.commons.cli.OptionTest_Method_101_Run_20231022_141456.testSetArgNameNull(OptionTest_Method_101_Run_20231022_141456.java:20)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        java.base/java.lang.reflect.Method.invoke(Method.java:568)        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)        [...]  Test run finished after 101 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         3 tests found           ] [         0 tests skipped         ] [         3 tests started         ] [         0 tests aborted         ] [         1 tests successful      ] [         2 tests failed          ]  
+commons-cli-master;137;Compilation Successful Round 0;0;
+commons-cli-master;137;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;102;Other Error;1;0
+commons-cli-master;119;Compilation Successful Round 1;0;
+commons-cli-master;72;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;153;Other Error;1;0
+commons-cli-master;116;Other Error;1;name 'method_id' is not defined
+commons-cli-master;132;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;154;Other Error;1;0
+commons-cli-master;157;Other Error;1;0
+commons-cli-master;100;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;83;Compilation Successful Round 0;0;
+commons-cli-master;92;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;149;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;138;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;103;Compilation Successful Round 0;0;
+commons-cli-master;103;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;165;Other Error;1;0
+commons-cli-master;119;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;119;Execution Error after after 0 repairs;1; Failures (2):   JUnit Vintage:ParserTest_Method_119_Run_20231022_141456:testParseWithStopAtNonOptionFalse     MethodSource [className = 'org.apache.commons.cli.ParserTest_Method_119_Run_20231022_141456', methodName = 'testParseWithStopAtNonOptionFalse', methodParameterTypes = '']     => java.lang.AssertionError: Expected exception: org.apache.commons.cli.ParseException        org.junit.internal.runners.statements.ExpectException.evaluate(ExpectException.java:34)        org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)        org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)        org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)        org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)        org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)        org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)        org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)        org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)        org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)        [...]   JUnit Vintage:ParserTest_Method_119_Run_20231022_141456:testParseWithMixedArguments     MethodSource [className = 'org.apache.commons.cli.ParserTest_Method_119_Run_20231022_141456', methodName = 'testParseWithMixedArguments', methodParameterTypes = '']     => java.lang.AssertionError: expected:<2> but was:<1>        org.junit.Assert.fail(Assert.java:89)        org.junit.Assert.failNotEquals(Assert.java:835)        org.junit.Assert.assertEquals(Assert.java:647)        org.junit.Assert.assertEquals(Assert.java:633)        org.apache.commons.cli.ParserTest_Method_119_Run_20231022_141456.testParseWithMixedArguments(ParserTest_Method_119_Run_20231022_141456.java:53)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        java.base/java.lang.reflect.Method.invoke(Method.java:568)        org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)        [...]  Test run finished after 26 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         3 tests found           ] [         0 tests skipped         ] [         3 tests started         ] [         0 tests aborted         ] [         1 tests successful      ] [         2 tests failed          ]  
+commons-cli-master;133;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;150;Other Error;1;0
+commons-cli-master;134;Other Error;1;0
+commons-cli-master;104;Other Error;1;0
+commons-cli-master;166;Other Error;1;0
+commons-cli-master;142;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;151;Other Error;1;0
+commons-cli-master;173;Other Error;1;0
+commons-cli-master;155;Other Error;1;name 'method_id' is not defined
+commons-cli-master;111;Compilation Successful Round 1;0;
+commons-cli-master;111;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;143;Other Error;1;0
+commons-cli-master;135;Other Error;1;0
+commons-cli-master;161;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;156;Other Error;1;0
+commons-cli-master;177;Other Error;1;0
+commons-cli-master;174;Class Name Extraction Error;1;
+commons-cli-master;169;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;152;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;181;Other Error;1;0
+commons-cli-master;124;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;162;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;139;Compilation Successful Round 1;0;
+commons-cli-master;158;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;144;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;163;Other Error;1;0
+commons-cli-master;127;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;167;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;145;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;178;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;159;Other Error;1;0
+commons-cli-master;83;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;164;Other Error;1;0
+commons-cli-master;182;Compilation Successful Round 0;0;
+commons-cli-master;182;Execution Successful after 0 repairs;0;
+commons-cli-master;128;Other Error;1;0
+commons-cli-master;136;Other Error;1;name 'method_id' is not defined
+commons-cli-master;112;Compilation Successful Round 1;0;
+commons-cli-master;160;Other Error;1;0
+commons-cli-master;197;Other Error;1;0
+commons-cli-master;201;Other Error;1;0
+commons-cli-master;183;Other Error;1;0
+commons-cli-master;139;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;120;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;202;Other Error;1;0
+commons-cli-master;140;Other Error;1;0
+commons-cli-master;184;Other Error;1;0
+commons-cli-master;209;Other Error;1;0
+commons-cli-master;185;Compilation Successful Round 0;0;
+commons-cli-master;185;Execution Successful after 0 repairs;0;
+commons-cli-master;179;Compilation Successful Round 0;0;
+commons-cli-master;179;Execution Successful after 0 repairs;0;
+commons-cli-master;186;Other Error;1;0
+commons-cli-master;210;Other Error;1;0
+commons-cli-master;211;Other Error;1;0
+commons-cli-master;205;Compilation Successful Round 0;0;
+commons-cli-master;205;Execution Successful after 0 repairs;0;
+commons-cli-master;198;Compilation Successful Round 0;0;
+commons-cli-master;198;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;212;Other Error;1;0
+commons-cli-master;206;Other Error;1;0
+commons-cli-master;217;Class Name Extraction Error;1;
+commons-cli-master;175;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;199;Other Error;1;0
+commons-cli-master;213;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;207;Other Error;1;0
+commons-cli-master;180;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;112;Execution Error after after 2 repairs;1; Failures (1):   JUnit Jupiter:PatternOptionBuilderTest_Method_112_Run_20231022_141456:testIsValueCode()     MethodSource [className = 'org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231022_141456', methodName = 'testIsValueCode', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <false> but was: <true>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.PatternOptionBuilderTest_Method_112_Run_20231022_141456.testIsValueCode(PatternOptionBuilderTest_Method_112_Run_20231022_141456.java:27)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 62 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         1 tests found           ] [         0 tests skipped         ] [         1 tests started         ] [         0 tests aborted         ] [         0 tests successful      ] [         1 tests failed          ]  
+commons-cli-master;176;Other Error;1;0
+commons-cli-master;218;Other Error;1;0
+commons-cli-master;170;Other Error;1;name 'method_id' is not defined
+commons-cli-master;200;Other Error;1;0
+commons-cli-master;214;Other Error;1;0
+commons-cli-master;219;Other Error;1;0
+commons-cli-master;215;Other Error;1;0
+commons-cli-master;171;Other Error;1;0
+commons-cli-master;168;Compilation Successful Round 3;0;
+commons-cli-master;146;Compilation Successful Round 2;0;
+commons-cli-master;146;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;220;Other Error;1;0
+commons-cli-master;172;Other Error;1;0
+commons-cli-master;229;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;189;Other Error;1;0
+commons-cli-master;168;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;168;Execution Error after after 0 repairs;1;"Usage: ConsoleLauncher [OPTIONS] Launches the JUnit Platform for test discovery and execution.       [@<filename>...]       One or more argument files containing options.  COMMANDS    -h, --help                 Display help information.       --list-engines         List all observable test engines.  SELECTORS        --scan-classpath, --scan-class-path[=PATH]                              Scan all directories on the classpath or explicit classpath                                roots. Without arguments, only directories on the system                                classpath as well as additional classpath entries supplied via                                -cp (directories and JAR files) are scanned. Explicit classpath                                roots that are not on the classpath will be silently ignored.                                This option can be repeated.       --scan-modules         EXPERIMENTAL: Scan all resolved modules for test discovery.   -u, --select-uri=URI       Select a URI for test discovery. This option can be repeated.   -f, --select-file=FILE     Select a file for test discovery. This option can be repeated.   -d, --select-directory=DIR Select a directory for test discovery. This option can be                                repeated.   -o, --select-module=NAME   EXPERIMENTAL: Select single module for test discovery. This                                option can be repeated.   -p, --select-package=PKG   Select a package for test discovery. This option can be repeated.   -c, --select-class=CLASS   Select a class for test discovery. This option can be repeated.   -m, --select-method=NAME   Select a method for test discovery. This option can be repeated.   -r, --select-resource=RESOURCE                              Select a classpath resource for test discovery. This option can                                be repeated.   -i, --select-iteration=TYPE:VALUE[INDEX(..INDEX)?(,INDEX(..INDEX)?)*]                              Select iterations for test discovery (e.g. method:com.acme.Foo#m()                                [1..2]). This option can be repeated.  FILTERS    -n, --include-classname=PATTERN                              Provide a regular expression to include only classes whose fully                                qualified names match. To avoid loading classes unnecessarily,                                the default pattern only includes class names that begin with                                ""Test"" or end with ""Test"" or ""Tests"". When this option is                                repeated, all patterns will be combined using OR semantics.                                Default: ^(Test.*|.+[.$]Test.*|.*Tests?)$   -N, --exclude-classname=PATTERN                              Provide a regular expression to exclude those classes whose fully                                qualified names match. When this option is repeated, all                                patterns will be combined using OR semantics.       --include-package=PKG  Provide a package to be included in the test run. This option can                                be repeated.       --exclude-package=PKG  Provide a package to be excluded from the test run. This option                                can be repeated.   -t, --include-tag=TAG      Provide a tag or tag expression to include only tests whose tags                                match. When this option is repeated, all patterns will be                                combined using OR semantics.   -T, --exclude-tag=TAG      Provide a tag or tag expression to exclude those tests whose tags                                match. When this option is repeated, all patterns will be                                combined using OR semantics.   -e, --include-engine=ID    Provide the ID of an engine to be included in the test run. This                                option can be repeated.   -E, --exclude-engine=ID    Provide the ID of an engine to be excluded from the test run.                                This option can be repeated.  RUNTIME CONFIGURATION        -cp, --classpath, --class-path=PATH                              Provide additional classpath entries -- for example, for adding                                engines and their dependencies. This option can be repeated.       --config=KEY=VALUE     Set a configuration parameter for test discovery and execution.                                This option can be repeated.  REPORTING        --fail-if-no-tests     Fail and return exit status code 2 if no tests are found.       --reports-dir=DIR      Enable report output into a specified local directory (will be                                created if it does not exist).  CONSOLE OUTPUT        --disable-ansi-colors  Disable ANSI colors in output (not supported by all terminals).       --color-palette=FILE   Specify a path to a properties file to customize ANSI style of                                output (not supported by all terminals).       --single-color         Style test output using only text attributes, no color (not                                supported by all terminals).       --disable-banner       Disable print out of the welcome message.       --details=MODE         Select an output details mode for when tests are executed. Use                                one of: none, summary, flat, tree, verbose. If 'none' is                                selected, then only the summary and test failures are shown.                                Default: tree.       --details-theme=THEME  Select an output details tree theme for when tests are executed.                                Use one of: ascii, unicode. Default is detected based on                                default character encoding.  For more information, please refer to the JUnit User Guide at https://junit.org/junit5/docs/current/user-guide/ "
+commons-cli-master;190;Other Error;1;0
+commons-cli-master;84;Compilation Error Round 3;1;"/Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_141456.java:34: error: cannot find symbol         this.value = value1;             ^   symbol: variable value /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_141456.java:35: error: cannot find symbol         this.value2 = value2;             ^   symbol: variable value2 Note: /Users/florianmende/Documents/Development/thesis/implementation/build/generated_tests/commons-cli-master/execution/org/apache/commons/cli/OptionTest_Method_84_Run_20231022_141456.java uses or overrides a deprecated API. Note: Recompile with -Xlint:deprecation for details. 2 errors "
+commons-cli-master;216;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;208;Compilation Successful Round 1;0;
+commons-cli-master;208;Execution Successful after 0 repairs;0;
+commons-cli-master;147;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;225;Compilation Successful Round 1;0;
+commons-cli-master;225;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;148;Other Error;1;0
+commons-cli-master;226;Other Error;1;0
+commons-cli-master;193;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;194;Other Error;1;0
+commons-cli-master;191;Compilation Successful Round 0;0;
+commons-cli-master;195;Compilation Repair Prompt Construction Error Round 1;1;
+commons-cli-master;191;Compilation Error during Execution Repair Round 1;1;
+commons-cli-master;191;Execution Error after after 0 repairs;1; Failures (4):   JUnit Jupiter:HelpFormatterTest_Method_191_Run_20231022_141456:testPrintHelpWithNoOptions()     MethodSource [className = 'org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456', methodName = 'testPrintHelpWithNoOptions', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <Usage: myapp [options] My Application This is a test footer > but was: <Mock for PrintWriter, hashCode: 102052782>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456.testPrintHelpWithNoOptions(HelpFormatterTest_Method_191_Run_20231022_141456.java:66)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]   JUnit Jupiter:HelpFormatterTest_Method_191_Run_20231022_141456:testPrintHelp()     MethodSource [className = 'org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456', methodName = 'testPrintHelp', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <Usage: myapp [options] My Application   -a, --alpha   Alpha option   -b, --beta    Beta option   -c, --gamma   Gamma option This is a test footer > but was: <Mock for PrintWriter, hashCode: 2029709919>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456.testPrintHelp(HelpFormatterTest_Method_191_Run_20231022_141456.java:41)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]   JUnit Jupiter:HelpFormatterTest_Method_191_Run_20231022_141456:testPrintHelpWithInvalidWidth()     MethodSource [className = 'org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456', methodName = 'testPrintHelpWithInvalidWidth', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: Expected java.lang.IllegalStateException to be thrown, but nothing was thrown.        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:73)        org.junit.jupiter.api.AssertThrows.assertThrows(AssertThrows.java:35)        org.junit.jupiter.api.Assertions.assertThrows(Assertions.java:3083)        org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456.testPrintHelpWithInvalidWidth(HelpFormatterTest_Method_191_Run_20231022_141456.java:113)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        java.base/java.lang.reflect.Method.invoke(Method.java:568)        org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)        [...]   JUnit Jupiter:HelpFormatterTest_Method_191_Run_20231022_141456:testPrintHelpWithCompactFormat()     MethodSource [className = 'org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456', methodName = 'testPrintHelpWithCompactFormat', methodParameterTypes = '']     => org.opentest4j.AssertionFailedError: expected: <Usage: myapp [options] My Application   -a, --alpha   Alpha option   -b, --beta    Beta option   -c, --gamma   Gamma option This is a test footer > but was: <Mock for PrintWriter, hashCode: 513279161>        org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)        org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)        org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)        org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)        org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1142)        org.apache.commons.cli.HelpFormatterTest_Method_191_Run_20231022_141456.testPrintHelpWithCompactFormat(HelpFormatterTest_Method_191_Run_20231022_141456.java:94)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)        java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)        java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)        [...]  Test run finished after 524 ms [         4 containers found      ] [         0 containers skipped    ] [         4 containers started    ] [         0 containers aborted    ] [         4 containers successful ] [         0 containers failed     ] [         4 tests found           ] [         0 tests skipped         ] [         4 tests started         ] [         0 tests aborted         ] [         0 tests successful      ] [         4 tests failed          ]  
+commons-cli-master;230;Other Error;1;0
+commons-cli-master;221;Compilation Successful Round 1;0;
+commons-cli-master;227;Compilation Repair Prompt Construction Error Round 3;1;
+commons-cli-master;196;Compilation Repair Prompt Construction Error Round 2;1;
+commons-cli-master;228;Compilation Successful Round 0;0;
+commons-cli-master;228;Execution Successful after 0 repairs;0;
+commons-cli-master;192;Compilation Successful Round 1;0;
+commons-cli-master;221;Execution Repair Prompt Construction Error Round 1;1;
+commons-cli-master;192;Execution Repair Prompt Construction Error Round 2;1;
+commons-cli-master;222;Other Error;1;0
+commons-cli-master;223;Other Error;1;0
+commons-cli-master;224;Other Error;1;0
