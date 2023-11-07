@@ -52,9 +52,6 @@ def add_jacoco_includes(pom_file: str, package_name: str, class_list: list):
     with open(pom_file, 'w') as file:
         file.write(xml_data)
 
-    with open('pom_temp.xml', 'w') as file:
-        file.write(xml_data)
-
     print(f"Modified {pom_file} to include specific classes in the Jacoco configuration.")
 
     return text_to_insert
