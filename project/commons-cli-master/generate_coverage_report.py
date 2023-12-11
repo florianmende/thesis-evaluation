@@ -12,6 +12,7 @@ run_id = args.run_id
 run_ids = args.run_ids
 
 # variable declaration
+# TODO: adjust paths to your system
 java_executable = "java"
 jacoco_executable = "/Users/florianmende/Documents/Development/thesis/evaluation/dependencies/jacoco-0.8.11/lib/jacococli.jar"
 java_project_jar = "/Users/florianmende/Documents/Development/thesis/evaluation/project/commons-cli-master/out/artifacts/commons_cli_jar/commons-cli.jar"
