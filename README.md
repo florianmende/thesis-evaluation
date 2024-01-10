@@ -61,6 +61,7 @@ Furthermore, the repository contains the following Python notebooks used for the
 ## License
 
 This project including the produced figures is licensed under the Apache License Version 2.0 - see the [LICENSE](LICENSE.txt) file for details.
+It includes components from a project licensed under the Eclipse Public License (EPL). The original license text is included in the [EPL](EPL.txt) file.
 
 ## Notices
 
