@@ -2,6 +2,8 @@
 
 This repository contains the evaluation code for the thesis "Automated Unit Test Generation with Large Language Models" by Florian Mende.
 
+For the code that was used for test generation refer to the [generation repository](https://github.com/florianmende/thesis-llm-test-generation).
+
 ## Usage
 The evaluation code is written in Python 3.10 requires the following packages:
 - pandas
